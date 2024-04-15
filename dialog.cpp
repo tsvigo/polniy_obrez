@@ -15,16 +15,16 @@ Dialog::Dialog(QWidget *parent)
     ui->setupUi(this);
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //   QString myString;
-    const int len = 2832, strings =1737;
+    const int len = 2832, strings =2480;
     const char ch = '\n';
     char mass[len][strings];
     
-    ifstream fs("/mnt/247E7EDA7E7EA3E8/книги/загрузки_Яндекс_браузера/единицы/единицы из шрифтов/black-white/отобранные/список.txt", ios::in | ios::binary);
+    ifstream fs("/home/viktor/my_projects_qt_2/kartinki_iz_shriftov/fonts-sort", ios::in | ios::binary);
     
-    QString comanda1="magick \"/mnt/247E7EDA7E7EA3E8/книги/загрузки_Яндекс_браузера/единицы/единицы из шрифтов/black-white/отобранные/обрез_снизу/";    
+    QString comanda1="magick \"/home/viktor/my_projects_qt_2/kartinki_iz_shriftov/papka-fonts-sort/obrez_snizu/";    
       QString font;
-    QString comanda3="\" -gravity South \  -background white -splice 0x1  -background black -splice 0x1 \  -trim  +repage -chop 0x1   \"/mnt/247E7EDA7E7EA3E8/книги/загрузки_Яндекс_браузера/единицы/единицы из шрифтов/black-white/отобранные/полный_обрез/";
-    QString comanda4="\"";
+    QString comanda3=".bmp\" -gravity South \  -background white -splice 0x1  -background black -splice 0x1 \  -trim  +repage -chop 0x1   \"/home/viktor/my_projects_qt_2/kartinki_iz_shriftov/papka-fonts-sort/obrez_snizu/polniy_obrez/";
+    QString comanda4=".bmp\"";
     QString comanda_vsia;
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     
